@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders with Timers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Emergency</a></li>
+            <li><a href="health data.html">Health Data</a></li>
+            <li><a href="remainder.html">Remainder</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    <div class="container">
+        <h1>Reminders</h1>
+        <div class="reminder" id="medicine">
+            <h2>Medicine Reminder</h2>
+            <p>Take your prescribed medication at the specified time.</p>
+            <div class="timer" id="medicine-timer">00:00</div>
+            <button onclick="startTimer('medicine')">Start Timer</button>
+        </div>
+        <div class="reminder" id="water">
+            <h2>Water Intake Reminder</h2>
+            <p>Stay hydrated! Drink at least 8 glasses of water today.</p>
+            <div class="timer" id="water-timer">00:00</div>
+            <button onclick="startTimer('water')">Start Timer</button>
+        </div>
+        <div class="reminder" id="exercise">
+            <h2>Exercise Reminder</h2>
+            <p>It's time to exercise! Don't forget your daily workout routine.</p>
+            <div class="timer" id="exercise-timer">00:00</div>
+            <button onclick="startTimer('exercise')">Start Timer</button>
+        </div>
+        <div class="reminder" id="sleep">
+            <h2>Sleep Reminder</h2>
+            <p>Get a good night's sleep. Aim for 7-8 hours of restful sleep.</p>
+            <div class="timer" id="sleep-timer">00:00</div>
+            <button onclick="startTimer('sleep')">Start Timer</button>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

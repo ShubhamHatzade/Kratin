@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Emergency</a></li>
+            <li><a href="health data.html">Health Data</a></li>
+            <li><a href="remainder.html">Remainder</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    <div class="container">
+        <h1>Health Data Collection</h1>
+        <form id="healthForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            
+            <label for="bloodGroup">Blood Group:</label>
+            <input type="text" id="bloodGroup" name="bloodGroup" required><br><br>
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required><br><br>
+            
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required><br><br>
+            
+            <label for="diseases">Diseases (if any):</label>
+            <textarea id="diseases" name="diseases"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="display">
+            <h2>Collected Data</h2>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Age:</strong> <span id="displayAge"></span></p>
+            <p><strong>Blood Group:</strong> <span id="displayBloodGroup"></span></p>
+            <p><strong>Height (cm):</strong> <span id="displayHeight"></span></p>
+            <p><strong>Weight (kg):</strong> <span id="displayWeight"></span></p>
+            <p><strong>Diseases (if any):</strong> <span id="displayDiseases"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
